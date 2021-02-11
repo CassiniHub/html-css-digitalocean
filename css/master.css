@@ -1,4 +1,6 @@
 /* COMMON */
+
+/* debug rules */
 .debug{
   text-align: center;
 
@@ -9,6 +11,28 @@
 
   background-color: pink;
   border: 1px solid black;
+}
+
+#nest{
+  padding: 5px 5px;
+  height: 100%;
+}
+
+.debug-nest{
+  text-align: center;
+
+  color: black;
+
+  height: 140px;
+  line-height: 140px;
+
+  background-color: lightblue;
+  border: 1px solid white;
+}
+
+/* debug margin bottom */
+.mb{
+  margin-bottom: 5px;
 }
 
 /* HEADER */
@@ -30,6 +54,21 @@ header{
 }
 
 /* -------------------------------------- */
+
+/* FEATURES*/
+#ms-features{
+  margin-bottom: 30px;
+}
+
+/* -------------------------------------- */
+
+/* FOR DEVELOPERS */
+#ms-for-developers{
+  margin-bottom: 30px;
+}
+
+/* -------------------------------------- */
+
 /* LARGE */
 @media all and (min-width: 1200px){
 
