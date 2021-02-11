@@ -83,6 +83,20 @@ header{
 
 /* -------------------------------------- */
 
+/* ROCKERBOX */
+#ms-rockerbox{
+  margin-bottom: 30px;
+}
+
+/* -------------------------------------- */
+
+/* GET STARTED */
+#ms-get-started{
+  margin-bottom: 30px;
+}
+
+/* -------------------------------------- */
+
 /* LARGE */
 @media all and (min-width: 1200px){
 
