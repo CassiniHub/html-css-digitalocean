@@ -1,0 +1,37 @@
+/* COMMON */
+.debug{
+  text-align: center;
+
+  color: black;
+
+  height: 150px;
+  line-height: 150px;
+
+  background-color: pink;
+  border: 1px solid black;
+}
+
+
+
+
+
+
+/* LARGE */
+@media all and (min-width: 1200px){
+
+}
+
+/* MEDIUM */
+@media all and (min-width: 992px) and (max-width: 1199px){
+
+}
+
+/* SMALL */
+@media all and (min-width: 768px) and (max-width: 991px){
+
+}
+
+/* EXTRA SMALL */
+@media all and (max-width: 767px){
+
+}
