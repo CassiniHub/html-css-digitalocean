@@ -11,11 +11,20 @@
   border: 1px solid black;
 }
 
+/* HEADER */
+header{
+  margin-bottom: 30px;
+}
 
+/* -------------------------------------- */
 
+/* JUMBOTRON */
 
+/* -------------------------------------- */
 
+/* HEADER */
 
+/* -------------------------------------- */
 /* LARGE */
 @media all and (min-width: 1200px){
 
