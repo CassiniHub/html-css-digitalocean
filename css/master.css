@@ -155,15 +155,13 @@ a:hover#ms-sign-button{
 #ms-jumbotron{
   background-image: url(../img/jumbo.svg);
 
-  height: 500px;
+  padding: 50px 0;
   margin-bottom: 30px;
 }
 
 .ms-jumbo-text{
   color: white;
   text-align: left;
-
-  padding: 52.91px 0;
 }
 
 .ms-jumbo-text h1{
@@ -187,7 +185,6 @@ a:hover#ms-sign-button{
   background-color: white;
   border-radius: 0.5rem;
 
-  margin-top: 52.91px;
   margin-left: 30px;
   padding-top: 40px;
 }
@@ -355,6 +352,15 @@ input[type=email]{
   .ms-navsign {
     display: none;
   }
+
+  /* JUMBOTRON */
+  .ms-jumbo-text{
+    text-align: center;
+  }
+  .ms-sign-in{
+    margin-top: 30px;
+    margin-left: 0;
+  }
 }
 
 /* EXTRA SMALL */
@@ -362,5 +368,14 @@ input[type=email]{
   .ms-navlinks,
   .ms-navsign {
     display: none;
+  }
+
+  /* JUMBOTRON */
+  .ms-jumbo-text{
+    text-align: center;
+  }
+  .ms-sign-in{
+    margin-top: 30px;
+    margin-left: 0;
   }
 }
