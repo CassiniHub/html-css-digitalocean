@@ -296,7 +296,7 @@ input[type=email]{
 
   color: #6F7B97;
 
-  margin-bottom: 50px;
+  margin-bottom: 10px;
 }
 
 .ms-logo-title h6{
@@ -306,14 +306,40 @@ input[type=email]{
   font-weight: bold;
 }
 
-
-.ms-logo-img{
+.ms-logo-box{
+  width: calc(100% / 6);
 }
-.ms-logo-img img{
+
+.ms-logo-container li img{
   width: 100%;
-  vertical-align: middle;
 }
 
+.ms-logo-container ul{
+  margin: 0;
+  padding: 0;
+}
+
+.ms-logo-container ul li{
+  list-style-type: none;
+  display: inline-block;
+
+  width: calc((100% - 50px) / 6);
+
+  margin-right: 10px;
+}
+
+.ms-logo-container ul li:last-child{
+  margin-right: 0;
+}
+
+.ms-logo-link {
+  text-align: center;
+}
+
+.ms-logo-link a{
+  text-decoration: none;
+  color: #006AFF;
+}
 /* -------------------------------------- */
 
 /* FEATURES*/
@@ -324,7 +350,7 @@ input[type=email]{
 /* -------------------------------------- */
 
 /* FOR DEVELOPERS */
-#ms-for-developers{
+#ms-for-developers {
   margin-bottom: 30px;
 }
 
@@ -411,6 +437,17 @@ input[type=email]{
   .ms-sign-in{
     margin-top: 30px;
     margin-left: 0;
+  }
+
+  /* LOGOS */
+  .ms-logo-container ul li{
+    width: calc((100% - 10px) / 2);
+
+    padding: 0 20px;
+  }
+
+  .ms-logo-container ul li{
+    margin-right: 0;
   }
 
   /* -------------------------------------- */
