@@ -1,5 +1,7 @@
 /* COMMON */
-
+body{
+  font-family: 'Raleway', sans-serif;
+}
 /* debug rules */
 .debug{
   text-align: center;
@@ -38,6 +40,114 @@
 /* HEADER */
 header{
   margin-bottom: 30px;
+}
+
+/* NAV */
+.ms-navigation{
+  height: 65px
+
+  color: #031b4f;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+.ms-logo{
+  height: 65px;
+  line-height: 65px;
+
+  margin-right: 6%;
+}
+
+.ms-navigation .ms-logo img{
+  width: 150px;
+  height: auto;
+
+  padding-bottom: 6px;
+  vertical-align: middle;
+}
+
+.ms-navlinks ul{
+  list-style-type: none;
+
+  height: 65px;
+  line-height: 65px;
+
+  margin: 0;
+  padding: 0;
+}
+
+.ms-navlinks ul li{
+  vertical-align: middle;
+  display: inline-block;
+
+  margin-right: 20px;
+}
+
+.ms-navlinks ul li a,
+.ms-navsign ul li a{
+  text-decoration: none;
+  color: #031b4f;
+}
+
+.ms-navsign ul{
+  list-style-type: none;
+
+  height: 65px;
+  line-height: 65px;
+
+  margin: 0;
+  padding: 0;
+}
+
+.ms-navsign ul li{
+  vertical-align: middle;
+  display: inline-block;
+
+  margin-right: 20px;
+}
+
+.ms-navsign ul li:last-child{
+  margin-right: 0;
+}
+
+#ms-sign-button{
+  padding: 10px 15px;
+
+  border: 1px solid #006AFF;
+  border-radius: 0.5rem;
+}
+a#ms-sign-button{
+  color: #006AFF;
+}
+a:hover#ms-sign-button{
+  color: #006AFF;
+}
+
+.ms-hamburger{
+  height: 65px;
+  line-height: 65px;
+}
+
+.dropdown{
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-hamburger{
+  display: none;
+  position: absolute;
+
+  right: 0;
+
+  background-color: #f9f9f9;
+  max-width: 200px;
+  width: 100%;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-hamburger{
+  display: block;
 }
 
 /* -------------------------------------- */
@@ -99,20 +209,30 @@ header{
 
 /* LARGE */
 @media all and (min-width: 1200px){
-
+  .ms-hamburger{
+    display: none;
+  }
 }
 
 /* MEDIUM */
 @media all and (min-width: 992px) and (max-width: 1199px){
-
+  .ms-hamburger{
+    display: none;
+  }
 }
 
 /* SMALL */
 @media all and (min-width: 768px) and (max-width: 991px){
-
+  .ms-navlinks,
+  .ms-navsign {
+    display: none;
+  }
 }
 
 /* EXTRA SMALL */
 @media all and (max-width: 767px){
-
+  .ms-navlinks,
+  .ms-navsign {
+    display: none;
+  }
 }
