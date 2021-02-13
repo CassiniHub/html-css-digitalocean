@@ -343,7 +343,7 @@ input[type=email]{
 
 /* FEATURES*/
 #ms-features{
-  padding: 50px 0;
+  padding: 70px 0;
 }
 
 .ms-heading-section{
@@ -412,9 +412,86 @@ input[type=email]{
 
 /* FOR DEVELOPERS */
 #ms-for-developers {
+  background-color: #F3F5F9;
+
+  padding-top: 70px;
+  padding-bottom: 40px;
+}
+
+#ms-for-developers .ms-heading-section h2{
   margin-bottom: 30px;
 }
 
+.ms-left-arrow{
+  display: inline-block;
+  font-size: 4rem;
+  width: 10%;
+}
+
+.ms-right-arrow{
+  display: inline-block;
+  text-align: right;
+  font-size: 4rem;
+  width: 10%;
+}
+
+.ms-right-arrow a{
+  color: #000042;
+}
+
+.ms-left-arrow a{
+  color: #000042;
+}
+
+.ms-right-arrow a:hover{
+  color: #6F7B97;
+}
+
+.ms-left-arrow a:hover{
+  color: #6F7B97;
+}
+
+.ms-carousel{
+  display: inline-block;
+  width: 79%;
+}
+
+.ms-carousel img{
+  width: 100%;
+}
+
+.ms-carousel-subtitle{
+  text-align: center;
+  color: #000042;
+  font-size: 1.4rem;
+  font-weight: 500;
+
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.ms-carousel-points{
+  text-align: center;
+}
+
+.ms-carousel-points ul{
+  padding: 0;
+}
+
+.ms-carousel-points ul li{
+  display: inline-block;
+  text-decoration: none;
+
+  border: 1px solid #006AFF;
+  border-radius: 50%;
+
+  width: 10px;
+  height: 10px;
+}
+
+.ms-carousel-points ul li:hover{
+  background-color: #006AFF;
+}
 /* -------------------------------------- */
 
 /* NEEDS */
@@ -518,7 +595,7 @@ input[type=email]{
   /* -------------------------------------- */
 
   /* FEATURES*/
-  .last{
+  .ms-last{
     margin: 0;
   }
 }
