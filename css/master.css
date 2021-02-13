@@ -515,4 +515,10 @@ input[type=email]{
 
   /* LOGOS */
 
+  /* -------------------------------------- */
+
+  /* FEATURES*/
+  .last{
+    margin: 0;
+  }
 }
