@@ -424,12 +424,15 @@ input[type=email]{
 
 .ms-left-arrow{
   display: inline-block;
+  vertical-align: middle;
+  text-align: left;
   font-size: 4rem;
   width: 10%;
 }
 
 .ms-right-arrow{
   display: inline-block;
+  vertical-align: middle;
   text-align: right;
   font-size: 4rem;
   width: 10%;
@@ -453,6 +456,7 @@ input[type=email]{
 
 .ms-carousel{
   display: inline-block;
+  vertical-align: middle;
   width: 79%;
 }
 
@@ -577,7 +581,62 @@ input[type=email]{
 
 /* ROCKERBOX */
 #ms-rockerbox{
+  background-color: #F3F5F9;
+
+  padding: 80px 0;
+}
+
+#ms-rockerbox .ms-heading-section{
+  margin-bottom: 100px;
+}
+
+.ms-rockerbox-container{
+  text-align: center;
+}
+
+#ms-rockerbox .ms-carousel{
+  background-color: white;
+
+  padding: 50px 0;
+
   margin-bottom: 30px;
+}
+
+#ms-rockerbox-img{
+  width: 40%;
+}
+
+#ms-rockerbox p{
+  color: #6F7B97;
+  font-size: 2.2rem;
+
+  margin-top: 30px;
+}
+
+#ms-rockerbox h5{
+  font-weight: bold;
+  font-size: 1.7rem;
+  color: #000042;
+
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+#ms-rockerbox-founder{
+  display: block;
+  font-weight: medium;
+  font-size: 1.7rem;
+  color: #000042;
+
+  margin-bottom: 30px;
+}
+
+.ms-carousel a{
+  text-decoration: none;
+
+  color: #006AFF;
+  font-size: 1.5rem;
+  font-weight: 600;
 }
 
 /* -------------------------------------- */
