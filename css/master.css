@@ -32,16 +32,13 @@ body{
   border: 1px solid white;
 }
 
-/* debug margin bottom */
-.mb{
-  margin-bottom: 30px;
-}
-
 /* HEADER */
-header{
-}
 
 /* NAV */
+nav{
+  background-color: white;
+}
+
 .ms-navigation{
   position: relative;
   height: 65px
@@ -157,6 +154,7 @@ a:hover#ms-sign-button{
   background-image: url(../img/jumbo.svg);
 
   padding: 50px 0;
+  margin-top: 65px;
 }
 
 .ms-jumbo-text{
