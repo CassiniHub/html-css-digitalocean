@@ -1,11 +1,24 @@
-/* COMMON */
+/* COMMON VIEWPORT RULES*/
 body{
   font-family: 'Raleway', sans-serif;
 }
-/* debug rules */
+
+a:hover{
+  text-decoration: none;
+}
+
+ul{
+  list-style: none;
+
+  margin: 0;
+  padding: 0;
+}
+
+
+/* -------------------------------------- */
+
 
 /* HEADER */
-
 /* NAV */
 nav{
   background-color: white;
@@ -13,12 +26,13 @@ nav{
 
 .ms-navigation{
   position: relative;
-  height: 65px
+  height: 65px;
 
   color: #031b4f;
   font-size: 1.6rem;
   font-weight: 500;
 }
+
 .ms-logo{
   height: 65px;
   line-height: 65px;
@@ -31,20 +45,16 @@ nav{
   height: auto;
 
   padding-bottom: 6px;
-  vertical-align: middle;
 }
 
-.ms-navlinks ul{
-  list-style-type: none;
-
+.ms-navlinks ul,
+.ms-navsign ul{
   height: 65px;
   line-height: 65px;
-
-  margin: 0;
-  padding: 0;
 }
 
-.ms-navlinks ul li{
+.ms-navlinks ul li,
+.ms-navsign ul li{
   vertical-align: middle;
   display: inline-block;
 
@@ -53,27 +63,9 @@ nav{
 
 .ms-navlinks ul li a,
 .ms-navsign ul li a{
-  text-decoration: none;
   color: #031b4f;
 }
-
-.ms-navsign ul{
-  list-style-type: none;
-
-  height: 65px;
-  line-height: 65px;
-
-  margin: 0;
-  padding: 0;
-}
-
-.ms-navsign ul li{
-  vertical-align: middle;
-  display: inline-block;
-
-  margin-right: 20px;
-}
-
+.ms-navlinks ul li:last-child,
 .ms-navsign ul li:last-child{
   margin-right: 0;
 }
@@ -84,20 +76,14 @@ nav{
   border: 1px solid #006AFF;
   border-radius: 0.5rem;
 }
+
 a#ms-sign-button{
-  color: #006AFF;
-}
-a:hover#ms-sign-button{
   color: #006AFF;
 }
 
 .ms-hamburger{
   height: 65px;
   line-height: 65px;
-}
-
-.dropdown{
-  /* display: inline-block; */
 }
 
 .dropdown-hamburger{
@@ -142,6 +128,7 @@ a:hover#ms-sign-button{
   margin-bottom: 30px;
   margin-top: 0;
 }
+
 .ms-jumbo-text p{
   font-size: 2.5rem;
   font-weight: 200;
@@ -184,11 +171,13 @@ a:hover#ms-sign-button{
 
 .ms-form-group{
   width: 90%;
+
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 10px;
   margin-top: 10px;
 }
+
 input[type=email],
 input[type=password]{
   color: grey;
@@ -211,6 +200,7 @@ input[type=email]{
   font-weight: 500;
 
   width: 90%;
+
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 10px;
@@ -247,8 +237,6 @@ input[type=email]{
   left: 15px;
 
   height: 20px;
-
-  vertical-align: middle;
 }
 
 .ms-term-service{
@@ -257,11 +245,14 @@ input[type=email]{
   padding-bottom: 30px;
 }
 
+
 /* -------------------------------------- */
+
 
 /* LOGOS */
 #ms-logos{
   background-color: #F3F5F9;
+
   padding: 50px 0;
 }
 
@@ -288,13 +279,7 @@ input[type=email]{
   width: 100%;
 }
 
-.ms-logo-container ul{
-  margin: 0;
-  padding: 0;
-}
-
 .ms-logo-container ul li{
-  list-style-type: none;
   display: inline-block;
 
   width: calc((100% - 50px) / 6);
@@ -311,10 +296,12 @@ input[type=email]{
 }
 
 .ms-logo-link a{
-  text-decoration: none;
   color: #006AFF;
 }
+
+
 /* -------------------------------------- */
+
 
 /* FEATURES*/
 #ms-features{
@@ -327,25 +314,27 @@ input[type=email]{
   margin-bottom: 40px;
 }
 
+#ms-features .ms-heading-section h2{
+  margin-bottom: 30px;
+}
+
 .ms-heading-section h2{
   color: #000042;
   font-size: 2.6rem;
   font-weight: bold;
 
   margin-top: 0;
+  margin-bottom: 0;
 }
 
 .ms-heading-section p{
   color: #6D7A94;
   font-size: 1.8rem;
+
+  margin-bottom: 0;
 }
 
 /* nav */
-.ms-feature-nav ul{
-  list-style-type: none;
-  padding: 0;
-}
-
 .ms-feature-nav li{
   border-left: 2px solid lightgrey;
 
@@ -360,7 +349,6 @@ input[type=email]{
 
 .ms-feature-nav li a{
   color: #6D7A94;
-  text-decoration: none;
 }
 
 /* features box */
@@ -372,9 +360,11 @@ input[type=email]{
   color: #000042;
   font-weight: medium;
   font-size: 1.7rem;
+
   margin-top: 15px;
   margin-bottom: 10px;
 }
+
 .ms-features-box p{
   color: #6D7A94;
   font-weight: medium;
@@ -412,7 +402,9 @@ input[type=email]{
 
 .ms-left-arrow{
   display: inline-block;
+
   vertical-align: middle;
+
   text-align: left;
   font-size: 4rem;
   width: 10%;
@@ -420,31 +412,29 @@ input[type=email]{
 
 .ms-right-arrow{
   display: inline-block;
+
   vertical-align: middle;
+
   text-align: right;
   font-size: 4rem;
   width: 10%;
 }
 
-.ms-right-arrow a{
-  color: #000042;
-}
-
+.ms-right-arrow a,
 .ms-left-arrow a{
   color: #000042;
 }
 
-.ms-right-arrow a:hover{
-  color: #6F7B97;
-}
-
+.ms-right-arrow a:hover,
 .ms-left-arrow a:hover{
   color: #6F7B97;
 }
 
 .ms-carousel{
   display: inline-block;
+
   vertical-align: middle;
+
   width: 79%;
 }
 
@@ -464,10 +454,6 @@ input[type=email]{
 
 .ms-carousel-points{
   text-align: center;
-}
-
-.ms-carousel-points ul{
-  padding: 0;
 }
 
 .ms-carousel-points ul li{
@@ -492,7 +478,6 @@ input[type=email]{
 }
 
 .ms-features-box a{
-  text-decoration: none;
   color: #006AFF;
 
   font-weight: medium;
@@ -565,7 +550,10 @@ input[type=email]{
 .ms-td-3{
   width: 20%;
 }
+
+
 /* -------------------------------------- */
+
 
 /* ROCKERBOX */
 #ms-rockerbox{
@@ -612,6 +600,7 @@ input[type=email]{
 
 #ms-rockerbox-founder{
   display: block;
+
   font-weight: medium;
   font-size: 1.7rem;
   color: #000042;
@@ -620,14 +609,14 @@ input[type=email]{
 }
 
 .ms-carousel a{
-  text-decoration: none;
-
   color: #006AFF;
   font-size: 1.5rem;
   font-weight: 600;
 }
 
+
 /* -------------------------------------- */
+
 
 /* GET STARTED */
 #ms-get-started{
@@ -650,8 +639,6 @@ input[type=email]{
 }
 
 #ms-get-started .ms-heading-section a{
-  text-decoration: none;
-
   background-color: white;
   color: #006AFF;
   font-size: 1.5rem;
@@ -681,8 +668,6 @@ footer .ms-copy-text #ms-proudly-made{
 }
 
 footer .ms-social-icon ul{
-  list-style: none;
-
   padding: 0;
   margin-top: 10px;
 }
@@ -692,18 +677,14 @@ footer .ms-social-icon ul li{
 }
 
 footer .ms-social-icon ul li a{
-  text-decoration: none;
-
-  color: #7A859D;
   font-size: 2.8rem;
 
   margin-right: 10px;
 }
 
-footer .ms-footer-links ul{
-  list-style: none;
-
-  padding: 0;
+footer .ms-social-icon ul li a,
+footer .ms-footer-links ul li a{
+  color: #7A859D;
 }
 
 footer .ms-footer-links .ms-heading-link{
@@ -716,12 +697,12 @@ footer .ms-footer-links ul li{
 }
 
 footer .ms-footer-links ul li a{
-  text-decoration: none;
-
-  color: #7A859D;
   font-size: 1.5rem;
 }
+
+
 /* -------------------------------------- */
+
 
 /* LARGE */
 @media all and (min-width: 1200px){
@@ -732,6 +713,10 @@ footer .ms-footer-links ul li a{
   }
 }
 
+
+/* -------------------------------------- */
+
+
 /* MEDIUM */
 @media all and (min-width: 992px) and (max-width: 1199px){
 
@@ -740,6 +725,10 @@ footer .ms-footer-links ul li a{
     display: none;
   }
 }
+
+
+/* -------------------------------------- */
+
 
 /* SMALL */
 @media all and (min-width: 768px) and (max-width: 991px){
@@ -770,9 +759,6 @@ footer .ms-footer-links ul li a{
 
   /* -------------------------------------- */
 
-
-  /* -------------------------------------- */
-
   /* FOR DEVELOPERS */
   .ms-left-arrow{
     display: none;
@@ -789,6 +775,19 @@ footer .ms-footer-links ul li a{
     margin-bottom: 20px;
   }
 }
+
+/* FOOTER */
+footer .ms-footer-links{
+  margin-bottom: 20px;
+}
+
+footer .ms-lastbox{
+  margin-bottom: 0;
+}
+
+
+/* -------------------------------------- */
+
 
 /* EXTRA SMALL */
 @media all and (max-width: 767px){
@@ -821,11 +820,11 @@ footer .ms-footer-links ul li a{
 
   /* -------------------------------------- */
 
-  /* LOGOS */
-
-  /* -------------------------------------- */
-
   /* FEATURES*/
+  .ms-feature-nav{
+    margin-bottom: 30px;
+  }
+
   .ms-box-1,
   .ms-box-2,
   .ms-box-3{
@@ -855,6 +854,7 @@ footer .ms-footer-links ul li a{
   }
 
   /* -------------------------------------- */
+
   /* WORLD */
   .ms-table-1{
     margin-bottom: 20px;
@@ -870,5 +870,14 @@ footer .ms-footer-links ul li a{
 
   .ms-td-3{
     width: 25%;
+  }
+
+  /* FOOTER */
+  footer .ms-footer-links{
+    margin-bottom: 20px;
+  }
+
+  footer .ms-lastbox{
+    margin-bottom: 0;
   }
 }
