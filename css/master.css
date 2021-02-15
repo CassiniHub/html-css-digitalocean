@@ -253,6 +253,8 @@ input[type=email]{
 }
 
 #ms-google-sign{
+  position: relative;
+
   color: grey;
   font-weight: 500;
 
@@ -271,6 +273,9 @@ input[type=email]{
 }
 
 #ms-google-sign img{
+  position: absolute;
+  left: 15px;
+
   height: 20px;
 
   vertical-align: middle;
@@ -406,6 +411,19 @@ input[type=email]{
   font-size: 1.4rem;
 
   margin-bottom: 0;
+}
+
+.ms-box-1,
+.ms-box-2{
+  margin-bottom: 30px;
+}
+
+.ms-box-3{
+  margin-bottom: 0
+}
+
+.ms-lastbox{
+  margin-bottom: 0
 }
 
 /* -------------------------------------- */
@@ -590,7 +608,7 @@ input[type=email]{
   margin-bottom: 100px;
 }
 
-.ms-rockerbox-container{
+.ms-carousel-container{
   text-align: center;
 }
 
@@ -782,6 +800,20 @@ footer .ms-footer-links ul li a{
 
   /* -------------------------------------- */
 
+
+  /* -------------------------------------- */
+
+  /* FOR DEVELOPERS */
+  .ms-left-arrow{
+    display: none;
+  }
+
+  .ms-right-arrow{
+    display: none;
+  }
+
+  /* -------------------------------------- */
+
   /* WORLD */
   .ms-table-1{
     margin-bottom: 20px;
@@ -824,8 +856,14 @@ footer .ms-footer-links ul li a{
   /* -------------------------------------- */
 
   /* FEATURES*/
-  .ms-last{
-    margin: 0;
+  .ms-box-1,
+  .ms-box-2,
+  .ms-box-3{
+    margin-bottom: 30px;
+  }
+
+  .ms-lastbox{
+    margin-bottom: 0
   }
 
   /* -------------------------------------- */
@@ -837,6 +875,16 @@ footer .ms-footer-links ul li a{
 
   /* -------------------------------------- */
 
+  /* FOR DEVELOPERS */
+  .ms-left-arrow{
+    display: none;
+  }
+
+  .ms-right-arrow{
+    display: none;
+  }
+
+  /* -------------------------------------- */
   /* WORLD */
   .ms-table-1{
     margin-bottom: 20px;
